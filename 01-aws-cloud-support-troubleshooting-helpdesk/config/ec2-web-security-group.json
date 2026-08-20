@@ -1,0 +1,56 @@
+{
+  "GroupName": "northstar-web-sg",
+  "Description": "Least-privilege security group for Northstar web workload",
+  "VpcId": "vpc-0abc1234example",
+  "IpPermissions": [
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 80,
+      "ToPort": 80,
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0",
+          "Description": "Public HTTP access for lab web service"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 443,
+      "ToPort": 443,
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0",
+          "Description": "Public HTTPS access for lab web service"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 22,
+      "ToPort": 22,
+      "IpRanges": [
+        {
+          "CidrIp": "203.0.113.10/32",
+          "Description": "Restricted SSH administration source used in the portfolio lab"
+        }
+      ]
+    }
+  ],
+  "IpPermissionsEgress": [
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0",
+          "Description": "Outbound access for package updates and external dependencies"
+        }
+      ]
+    }
+  ],
+  "Tags": [
+    {"Key": "Name", "Value": "northstar-web-sg"},
+    {"Key": "Environment", "Value": "lab"},
+    {"Key": "ManagedBy", "Value": "cloud-support-portfolio"}
+  ]
+}

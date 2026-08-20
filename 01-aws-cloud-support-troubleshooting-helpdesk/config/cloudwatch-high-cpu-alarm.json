@@ -1,0 +1,24 @@
+{
+  "AlarmName": "northstar-ec2-high-cpu",
+  "AlarmDescription": "Alert when EC2 CPU utilization remains at or above 80 percent for 10 minutes",
+  "Namespace": "AWS/EC2",
+  "MetricName": "CPUUtilization",
+  "Dimensions": [
+    {
+      "Name": "InstanceId",
+      "Value": "i-0abc1234example"
+    }
+  ],
+  "Statistic": "Average",
+  "Period": 300,
+  "EvaluationPeriods": 2,
+  "DatapointsToAlarm": 2,
+  "Threshold": 80.0,
+  "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+  "TreatMissingData": "missing",
+  "ActionsEnabled": true,
+  "Tags": [
+    {"Key": "Environment", "Value": "lab"},
+    {"Key": "Service", "Value": "northstar-web"}
+  ]
+}
