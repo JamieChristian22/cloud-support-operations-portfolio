@@ -1,0 +1,11 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded"];
+  User [label="Operations Client\n10.60.30.15"];
+  DNS [label="Internal DNS\nweb01.corp.northstar.internal"];
+  RT [label="Route Tables"];
+  FW [label="Cloud Security Control\nTCP/443"];
+  HostFW [label="Host Firewall"];
+  App [label="Web Server\n10.60.20.25:443"];
+  User -> DNS -> RT -> FW -> HostFW -> App;
+}

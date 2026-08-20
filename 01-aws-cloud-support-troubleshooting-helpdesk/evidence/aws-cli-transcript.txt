@@ -1,0 +1,22 @@
+AWS Support Lab Validation Transcript — 2026-08-19
+Region: us-east-1
+
+[EC2] ns-web-01: running
+Private IP: 10.20.10.25
+Public documentation IP used in lab artifacts: 203.0.113.25
+Security group: sg-0a11bb22cc33dd44e
+
+[S3] northstar-support-lab-2026
+ListBucket: PASS
+GetObject after policy correction: PASS
+
+[HTTP] http://app.northstar-lab.internal
+Status: 200 OK
+
+[CloudWatch]
+CPU alarm: returned to OK
+Baseline after incident: 18-24%
+
+[Linux]
+Root filesystem after cleanup: 32% used
+nginx.service: active

@@ -1,0 +1,17 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded"];
+  User [label="Support User\n198.51.100.24"];
+  DNS [label="DNS\nnorthstar-lab.internal"];
+  IGW [label="Internet Gateway"];
+  SG [label="Security Group\n80/443 + controlled SSH"];
+  EC2 [label="EC2 ns-web-01\n10.20.10.25\nNginx"];
+  CW [label="CloudWatch\nMetrics + Logs"];
+  S3 [label="S3\nnorthstar-support-lab-2026"];
+  IAM [label="IAM\nRoles + Policies"];
+  User -> DNS -> IGW -> SG -> EC2;
+  EC2 -> CW;
+  EC2 -> S3;
+  IAM -> EC2 [style=dashed];
+  IAM -> S3 [style=dashed];
+}

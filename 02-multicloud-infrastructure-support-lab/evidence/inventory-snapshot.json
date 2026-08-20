@@ -1,0 +1,25 @@
+{
+  "environment": "support-lab",
+  "snapshot_date": "2026-08-19",
+  "aws": {
+    "instance": "aws-support-web-01",
+    "state": "running",
+    "private_ip": "10.30.10.10",
+    "storage": "northstar-multicloud-aws-2026",
+    "health": "ok"
+  },
+  "azure": {
+    "instance": "az-support-web-01",
+    "state": "running",
+    "private_ip": "10.40.10.10",
+    "storage": "nssupportlab2026",
+    "health": "ok"
+  },
+  "gcp": {
+    "instance": "gcp-support-web-01",
+    "state": "RUNNING",
+    "private_ip": "10.50.10.10",
+    "storage": "northstar-multicloud-gcp-2026",
+    "health": "ok"
+  }
+}

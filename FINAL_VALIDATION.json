@@ -1,0 +1,11 @@
+{
+  "five_projects_present": true,
+  "recruiter_quick_start": true,
+  "skills_matrix": true,
+  "security_evidence_standard": true,
+  "placeholder_scan_clean": false,
+  "placeholder_hits": [
+    "README.md: TODO",
+    "README.md: PLACEHOLDER"
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "script": "02-multicloud-infrastructure-support-lab/scripts/inventory_multicloud.py",
+    "returncode": 0,
+    "stdout": "{\n  \"generated_at\": \"2026-08-20T02:44:58.697498+00:00\",\n  \"environment\": \"support-lab\",\n  \"aws\": {\n    \"region\": \"us-east-1\",\n    \"compute\": \"EC2\",\n    \"instance\": \"aws-support-web-01\",\n    \"storage\": \"northstar-multicloud-aws-2026\",\n    \"monitoring\": \"CloudWatch\"\n  },\n  \"azure\": {\n    \"region\": \"eastus\",\n    \"compute\": \"Azure VM\",\n    \"instance\": \"az-support-web-01\",\n    \"storage\": \"nssupportlab2026\",\n    \"monitoring\": \"Azure Monitor\"\n  },\n  \"gcp\": {\n    \"region\": \"us-east1\",\n    \"compute\": \"Compute Engine\",\n    \"instance\": \"gcp-support-web-01\",\n    \"storage\": \"northstar-multicloud-gcp-2026\",\n    \"monitoring\": \"Cloud Monitoring\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "script": "04-cloud-monitoring-incident-response/scripts/analyze_metrics.py",
+    "returncode": 0,
+    "stdout": "Samples: 7\nCPU > 90% samples: 3\nHTTP 5xx > 5% samples: 3\nPeak CPU: 96.0%\nPeak 5xx: 7.8%\nFinal CPU: 24.0%\nFinal 5xx: 0.2%\n",
+    "stderr": ""
+  },
+  {
+    "script": "05-cloud-administration-iam-backup-operations/scripts/tag_compliance.py",
+    "returncode": 0,
+    "stdout": "ec2  i-0a1b2c3d4e5f60718: PASS\ns3   northstar-admin-backup-2026: PASS\nebs  vol-0123456789abcdef0: FAIL missing=cost-center\nCompliance: 2/3 resources fully tagged\n",
+    "stderr": ""
+  }
+]

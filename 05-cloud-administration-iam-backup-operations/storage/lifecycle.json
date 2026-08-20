@@ -1,0 +1,26 @@
+{
+  "Rules": [
+    {
+      "ID": "archive-backups-after-30-days",
+      "Status": "Enabled",
+      "Filter": {
+        "Prefix": "backups/"
+      },
+      "Transitions": [
+        {
+          "Days": 30,
+          "StorageClass": "STANDARD_IA"
+        }
+      ],
+      "NoncurrentVersionTransitions": [
+        {
+          "NoncurrentDays": 30,
+          "StorageClass": "STANDARD_IA"
+        }
+      ],
+      "NoncurrentVersionExpiration": {
+        "NoncurrentDays": 90
+      }
+    }
+  ]
+}

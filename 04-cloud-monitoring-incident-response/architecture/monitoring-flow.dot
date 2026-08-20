@@ -1,0 +1,12 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded"];
+  App [label="Cloud VM + Web App"];
+  Metrics [label="Metrics\nCPU / Disk / 5xx"];
+  Logs [label="Application Logs"];
+  Alert [label="Alert Policy"];
+  Ops [label="Cloud Operations Analyst"];
+  Ticket [label="Incident Ticket"];
+  App -> Metrics -> Alert -> Ops -> Ticket;
+  App -> Logs -> Ops;
+}

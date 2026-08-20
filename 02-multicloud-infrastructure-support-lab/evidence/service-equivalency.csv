@@ -1,0 +1,7 @@
+capability,aws,azure,gcp
+Compute,EC2,Azure Virtual Machines,Compute Engine
+Object Storage,S3,Blob Storage,Cloud Storage
+Identity,AWS IAM,Microsoft Entra ID + Azure RBAC,Cloud IAM
+Virtual Network,VPC,Virtual Network (VNet),VPC
+Metrics/Monitoring,CloudWatch,Azure Monitor,Cloud Monitoring
+CLI,aws,az,gcloud

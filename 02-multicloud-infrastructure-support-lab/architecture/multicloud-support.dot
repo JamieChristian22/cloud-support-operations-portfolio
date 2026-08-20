@@ -1,0 +1,11 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded"];
+  Ops [label="Cloud Operations\nStandard Runbook"];
+  AWS [label="AWS\nEC2 + S3 + IAM + CloudWatch"];
+  AZ [label="Azure\nVM + Blob + RBAC + Monitor"];
+  GCP [label="GCP\nCompute + GCS + IAM + Monitoring"];
+  Ops -> AWS;
+  Ops -> AZ;
+  Ops -> GCP;
+}

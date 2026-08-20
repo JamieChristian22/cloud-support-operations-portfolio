@@ -1,0 +1,11 @@
+terraform {
+  required_providers {
+    aws = { source = "hashicorp/aws", version = "~> 5.0" }
+  }
+}
+provider "aws" { region = "us-east-1" }
+
+resource "aws_s3_bucket" "support" {
+  bucket = "northstar-multicloud-aws-2026"
+  tags = { environment = "support-lab", owner = "cloud-operations", cost-center = "learning" }
+}

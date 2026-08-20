@@ -1,0 +1,4 @@
+backup_date,object,version_id,sha256,restore_test,result
+2026-08-17,customer-summary.csv,v20260817,9b6e52c5a5e684bd82a4c9a63c2a5e3ccf0a9259099a9645e1dd1568784365b5,2026-08-19,PASS
+2026-08-18,customer-summary.csv,v20260818,7a6645e1b4689f2661cf40fa83f4210095bd9c682860dfec209ce888a42a9e45,2026-08-19,PASS
+2026-08-19,customer-summary.csv,v20260819,b3a8e0e1f9abf43c8d96e6bfa1925ddde038c32b32fc198b27a8d3aad3ba56a6,2026-08-19,PASS

@@ -1,0 +1,5 @@
+user,persona,mfa,last_review,review_result
+Maya Reed,ops-analyst,Enabled,2026-08-19,Retain
+Evan Cole,app-support,Enabled,2026-08-19,Retain
+Noah Grant,backup-operator,Enabled,2026-08-19,Retain
+Former Contractor,app-support,Disabled,2026-08-19,Remove

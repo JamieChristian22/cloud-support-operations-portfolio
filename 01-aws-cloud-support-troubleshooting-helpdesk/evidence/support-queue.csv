@@ -1,0 +1,9 @@
+ticket_id,priority,service,status,minutes_to_resolution,customer_impact
+INC-001,P2,EC2-Network,Resolved,22,Admin access unavailable
+INC-002,P2,S3-IAM,Resolved,18,Report download blocked
+INC-003,P1,EC2-Nginx,Resolved,14,Website unavailable
+INC-004,P2,DNS,Resolved,26,Internal name resolution failed
+INC-005,P2,EC2-CloudWatch,Resolved,31,High latency
+INC-006,P3,IAM-CloudWatch,Resolved,24,Log visibility blocked
+INC-007,P2,Linux-Storage,Resolved,29,Low disk capacity risk
+INC-008,P2,EC2-Network,Resolved,17,Health check failed

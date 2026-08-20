@@ -1,0 +1,16 @@
+Network Triage Transcript — 2026-08-19
+Client: 10.60.30.15
+Target: web01.corp.northstar.internal
+Expected IP: 10.60.20.25
+Expected Port: 443/tcp
+
+NET-001 before: DNS -> 10.60.20.52 (FAIL)
+NET-001 after:  DNS -> 10.60.20.25 (PASS)
+
+NET-003 before: tcp/443 blocked at cloud rule (FAIL)
+NET-003 after:  tcp/443 permitted from 10.60.30.0/24 (PASS)
+
+NET-004 before: host firewall missing https service (FAIL)
+NET-004 after:  https service allowed, firewall remains enabled (PASS)
+
+Final HTTPS status: 200 OK

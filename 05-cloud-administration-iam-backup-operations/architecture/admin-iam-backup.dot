@@ -1,0 +1,15 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded"];
+  Users [label="Support Personas"];
+  IAM [label="IAM / RBAC\nLeast Privilege + MFA"];
+  Compute [label="Cloud Compute"];
+  Storage [label="Protected Object Storage\nVersioning + Lifecycle"];
+  Backup [label="Backup / Recovery"];
+  Audit [label="Audit Logs + Access Review"];
+  Users -> IAM;
+  IAM -> Compute;
+  IAM -> Storage;
+  Storage -> Backup;
+  IAM -> Audit;
+}

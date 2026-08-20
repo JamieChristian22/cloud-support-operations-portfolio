@@ -1,0 +1,7 @@
+2026-08-19T18:07:13-04:00 WARN request_queue depth=184 latency_ms=1842
+2026-08-19T18:08:04-04:00 ERROR http status=503 path=/api/status latency_ms=2155
+2026-08-19T18:12:27-04:00 ERROR http status=503 path=/api/report latency_ms=2417
+2026-08-19T18:18:41-04:00 INFO change_review synthetic_load_process=7821 owner=ops-lab
+2026-08-19T18:21:10-04:00 INFO process_stopped pid=7821 command=/opt/northstar/tools/load-test.py
+2026-08-19T18:27:02-04:00 INFO health_check status=200 latency_ms=118
+2026-08-19T18:31:00-04:00 INFO incident_validation 5xx_percent=0.2 cpu_percent=24
