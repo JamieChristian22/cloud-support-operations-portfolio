@@ -1,0 +1,23 @@
+name: Cloud support offline structure
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify portfolio structure and fixture syntax
+        run: python scripts/verify_offline.py
+      - name: Check shell script syntax
+        run: find . -type f -name '*.sh' -exec bash -n {} \;
