@@ -2,15 +2,15 @@
 
 **Jamie Christian II**
 
-![AWS](https://img.shields.io/badge/AWS-Cloud%20Support-232F3E?style=for-the-badge\&logo=amazonwebservices\&logoColor=white)
-![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud%20Operations-0078D4?style=for-the-badge\&logo=microsoftazure\&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-GCP-4285F4?style=for-the-badge\&logo=googlecloud\&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-Cloud%20Support-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud%20Operations-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 
-![Linux](https://img.shields.io/badge/Linux-Administration-FCC624?style=flat-square\&logo=linux\&logoColor=black)
-![Terraform](https://img.shields.io/badge/Terraform-IaC-844FBA?style=flat-square\&logo=terraform\&logoColor=white)
-![Python](https://img.shields.io/badge/Python-Automation-3776AB?style=flat-square\&logo=python\&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-Automation-5391FE?style=flat-square\&logo=powershell\&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-Scripting-4EAA25?style=flat-square\&logo=gnubash\&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Administration-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-844FBA?style=flat-square&logo=terraform&logoColor=white)
+![Python](https://img.shields.io/badge/Python-Automation-3776AB?style=flat-square&logo=python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-Automation-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-Scripting-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
 ![IAM](https://img.shields.io/badge/IAM-Access%20Management-orange?style=flat-square)
 ![Networking](https://img.shields.io/badge/Cloud-Networking-blue?style=flat-square)
@@ -20,6 +20,36 @@
 Hands-on **Cloud Support & Operations portfolio** demonstrating practical troubleshooting, administration, monitoring, incident response, networking, IAM/RBAC, backup and recovery, and automation across **AWS, Microsoft Azure, and Google Cloud Platform (GCP)**.
 
 This portfolio is built around realistic support and operations scenarios rather than basic cloud deployment tutorials. Each project demonstrates how I **investigate a problem, identify the root cause, implement a resolution, validate service recovery, and document the work**.
+
+---
+
+## Quick start · Five cloud support scenarios
+
+[![Offline structural validation](https://github.com/JamieChristian22/cloud-support-operations-portfolio/actions/workflows/offline-validation.yml/badge.svg)](https://github.com/JamieChristian22/cloud-support-operations-portfolio/actions/workflows/offline-validation.yml)
+
+| Scenario | What a reviewer can inspect |
+| --- | --- |
+| [01 · AWS support and help desk](01-aws-cloud-support-troubleshooting-helpdesk/README.md) | [EC2 SSH incident](01-aws-cloud-support-troubleshooting-helpdesk/tickets/INC-001-ec2-ssh-failure.md) · [Triage runbook](01-aws-cloud-support-troubleshooting-helpdesk/runbooks/cloud-support-triage-runbook.md) |
+| [02 · Multi-cloud support](02-multicloud-infrastructure-support-lab/README.md) | [Infrastructure inventory fixture](02-multicloud-infrastructure-support-lab/evidence/inventory-snapshot.json) · [Cross-cloud troubleshooting matrix](02-multicloud-infrastructure-support-lab/documentation/cross-cloud-troubleshooting-matrix.md) |
+| [03 · Networking troubleshooting](03-cloud-networking-connectivity-troubleshooting/README.md) | [DNS incident](03-cloud-networking-connectivity-troubleshooting/incidents/NET-001-wrong-dns-record.md) · [Routing incident](03-cloud-networking-connectivity-troubleshooting/incidents/NET-002-missing-route.md) |
+| [04 · Monitoring and incident response](04-cloud-monitoring-incident-response/README.md) | [High CPU / 5xx incident](04-cloud-monitoring-incident-response/incidents/IR-001-high-cpu-5xx.md) · [Postmortem](04-cloud-monitoring-incident-response/postmortems/IR-001-postmortem.md) |
+| [05 · IAM and backup operations](05-cloud-administration-iam-backup-operations/README.md) | [Access-review fixture](05-cloud-administration-iam-backup-operations/evidence/access-review.csv) · [Backup verification](05-cloud-administration-iam-backup-operations/evidence/backup-verification.csv) |
+
+**Start in two minutes:** Read the [recruiter guide](RECRUITER_QUICK_START.md), open one incident, then trace the supporting script/configuration, log or data fixture, root-cause analysis and operational procedure. See the [skills matrix](SKILLS_MATRIX.md) for role alignment.
+
+### Repeatable, offline validation
+
+This portfolio now includes a Python standard-library validator and a [GitHub Actions workflow](.github/workflows/offline-validation.yml). From the repository root:
+
+```bash
+python scripts/verify_offline.py
+```
+
+The script checks required project files and parses the checked-in JSON and CSV fixtures. The Action additionally checks shell syntax. **Neither check connects to AWS, Azure, or GCP**, so it cannot prove that a cloud deployment or incident remediation occurred.
+
+[Earlier script outputs](VALIDATION_RESULTS.json) document sample execution output; [the earlier validation snapshot](FINAL_VALIDATION.json) also reports an unresolved placeholder scan. Those historical files are disclosed rather than relabeled as a fresh clean audit. See [security and evidence standards](SECURITY_AND_EVIDENCE.md). Lab tickets, logs, outcomes and cloud identifiers are simulated unless separately documented with actual sanitized cloud evidence.
+
+[Portfolio website](https://jamiechristian22.github.io/) · [GitHub profile](https://github.com/JamieChristian22) · [Sponsor independent projects](https://github.com/sponsors/JamieChristian22)
 
 ---
 
@@ -434,9 +464,9 @@ My broader technical background includes IT support, Microsoft 365 administratio
 
 # 🔗 Connect
 
-[![GitHub](https://img.shields.io/badge/GitHub-JamieChristian22-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/JamieChristian22)
+[![GitHub](https://img.shields.io/badge/GitHub-JamieChristian22-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JamieChristian22)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jamie%20Christian%20II-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/jamiechristian2/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jamie%20Christian%20II-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jamiechristian2/)
 
 ---
 
