@@ -496,3 +496,9 @@ See [LICENSE](LICENSE) for the repository license. Third-party code, datasets, i
 ## Reviewer guide and asset provenance
 
 Use [REVIEWER_GUIDE.md](REVIEWER_GUIDE.md) to navigate tracked evidence and review sample dataset/media source and reuse rights. Listings are not proof of ownership or license clearance.
+
+## Monitoring incident diagnostics
+
+Run `python 04-cloud-monitoring-incident-response/scripts/analyze_metrics.py --output reports/incident-diagnostics.json` to analyze the existing synthetic CPU, HTTP 5xx, and disk samples. The updated script validates timestamps and numeric bounds, separates transient spikes from sustained consecutive-sample threshold breaches, identifies correlated alarm windows, and notes the **next normal observation** instead of claiming an exact recovery time.
+
+The [offline validation workflow](.github/workflows/offline-validation.yml) runs [incident regression tests](tests/test_incident_diagnostics.py) and publishes a machine-readable diagnostics artifact. This is sampled offline analysis, not a live cloud-monitoring or remediation system.
