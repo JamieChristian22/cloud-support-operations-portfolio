@@ -19,5 +19,7 @@ jobs:
           python-version: '3.11'
       - name: Verify portfolio structure and fixture syntax
         run: python scripts/verify_offline.py
+      - name: Check internal README references
+        run: python scripts/check_readme_links.py
       - name: Check shell script syntax
         run: find . -type f -name '*.sh' -exec bash -n {} \;
