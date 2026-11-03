@@ -23,6 +23,21 @@ This portfolio is built around realistic support and operations scenarios rather
 
 ---
 
+## Strict offline data-quality checks
+
+[![Cloud support validation](https://github.com/JamieChristian22/cloud-support-operations-portfolio/actions/workflows/offline-validation.yml/badge.svg)](https://github.com/JamieChristian22/cloud-support-operations-portfolio/actions/workflows/offline-validation.yml)
+
+The [fixture validator](./scripts/verify_offline.py) checks the five lab directories, JSON parsing and CSV records. It rejects duplicate or blank column names, missing or surplus fields, empty rows and empty datasets. [Negative-case tests](./tests/test_offline_validation.py) demonstrate the rejection logic.
+
+```bash
+python scripts/verify_offline.py
+python -m unittest discover -s tests -v
+```
+
+**Scope:** This is reproducible, offline validation of synthetic lab files; no real AWS, Azure, GCP, network, identity or backup operations are executed.
+
+---
+
 ## Quick start · Five cloud support scenarios
 
 [![Offline structural validation](https://github.com/JamieChristian22/cloud-support-operations-portfolio/actions/workflows/offline-validation.yml/badge.svg)](https://github.com/JamieChristian22/cloud-support-operations-portfolio/actions/workflows/offline-validation.yml)
