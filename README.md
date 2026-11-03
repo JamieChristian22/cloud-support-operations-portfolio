@@ -488,3 +488,7 @@ My broader technical background includes IT support, Microsoft 365 administratio
 ## 📄 License
 
 This portfolio is provided under the **MIT License**.
+
+## License and third-party materials
+
+See [LICENSE](LICENSE) for the repository license. Third-party code, datasets, images, and other assets retain their respective terms.
