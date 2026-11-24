@@ -1,5 +1,12 @@
 # ☁️ Cloud Support & Operations Portfolio
 
+Cloud support engineering portfolio covering Linux troubleshooting, networking, IAM/RBAC, monitoring, incident triage and recovery documentation using simulated operational scenarios and offline validation.
+
+**Explore related projects:** [cloud infrastructure troubleshooting lab](https://github.com/JamieChristian22/cloud-infrastructure-troubleshooting-lab) · [enterprise it support and systems operations](https://github.com/JamieChristian22/enterprise-it-support-and-systems-operations)
+
+[Recruiter quick-start guide](https://github.com/JamieChristian22/JamieChristian22/blob/main/RECRUITER_START_HERE.md) · [Portfolio website](https://jamiechristian22.github.io/)
+
+
 **Jamie Christian II**
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud%20Support-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
