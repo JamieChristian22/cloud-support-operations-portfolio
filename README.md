@@ -45,6 +45,10 @@ python -m unittest discover -s tests -v
 
 ---
 
+## Hands-on local support investigation
+
+[06 · Network, API and container troubleshooting](06-hands-on-support-investigation/README.md) — actual guided macOS, Postman and Docker diagnostics, sanitized evidence, reusable API collection and an open Guestbook incident report. No cloud deployment or confirmed recovery.
+
 ## Quick start · Five cloud support scenarios
 
 [![Offline structural validation](https://github.com/JamieChristian22/cloud-support-operations-portfolio/actions/workflows/offline-validation.yml/badge.svg)](https://github.com/JamieChristian22/cloud-support-operations-portfolio/actions/workflows/offline-validation.yml)
