@@ -1,0 +1,32 @@
+# Local Python and editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+
+# Local credentials and infrastructure artifacts (prevent accidental new tracking)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfplan
+*.tfplan.*
+*.kubeconfig
+id_rsa
+id_ed25519
+.aws/credentials
+.kube/config
+terraform.rc
+.terraformrc
