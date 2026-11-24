@@ -1,0 +1,43 @@
+{
+  "info": {
+    "name": "Cloud Support API Diagnostics",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Reconstructed from verified guided lab requests; no credentials."
+  },
+  "item": [
+    {
+      "name": "GET - Baseline",
+      "request": {
+        "method": "GET",
+        "url": "https://postman-echo.com/get"
+      }
+    },
+    {
+      "name": "GET - API Query Parameter Test",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://postman-echo.com/get?role=cloud-support&status=active",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "role",
+              "value": "cloud-support"
+            },
+            {
+              "key": "status",
+              "value": "active"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
